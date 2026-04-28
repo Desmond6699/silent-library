@@ -1,0 +1,207 @@
+/* Silent Library Website
+   Beginner-friendly custom CSS
+   Bootstrap handles most layout. This file only adds colours and small styling.
+*/
+
+:root {
+  --mint: #aaffc7;
+  --green: #67c090;
+  --teal: #215b63;
+  --navy: #124170;
+  --light: #f6fbf8;
+  --dark: #1f2f35;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--teal);
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #d9e8e3;
+}
+
+.navbar-brand {
+  color: var(--teal) !important;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.navbar-brand img {
+  height: 90px;
+}
+
+.nav-link {
+  color: var(--navy) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--teal) !important;
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+  background:
+    linear-gradient(rgba(18, 65, 112, 0.75), rgba(33, 91, 99, 0.75)),
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 110px 0;
+}
+
+.hero-section h1,
+.hero-section p {
+  color: white;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.bg-soft {
+  background-color: #eef8f3;
+}
+
+/* Cards */
+.custom-card {
+  border: 1px solid #d9e8e3;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(18, 65, 112, 0.08);
+  height: 100%;
+}
+
+.book-cover-box {
+  min-height: 210px;
+  background: linear-gradient(135deg, var(--mint), var(--green));
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.event-banner {
+  background: linear-gradient(135deg, var(--teal), var(--navy));
+  color: white;
+  border-radius: 18px;
+  padding: 40px;
+}
+
+.event-banner h2,
+.event-banner p {
+  color: white;
+}
+
+.badge-category {
+  background-color: var(--mint);
+  color: var(--teal);
+  border: 1px solid var(--green);
+}
+
+.btn-main {
+  background-color: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+.btn-main:hover {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.btn-outline-main {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.btn-outline-main:hover {
+  background-color: var(--teal);
+  color: white;
+}
+
+/* Mock-up boxes */
+.mock-box {
+  border: 2px dashed #b6cbc5;
+  border-radius: 16px;
+  background-color: white;
+  padding: 25px;
+}
+
+.review-box {
+  border-left: 5px solid var(--green);
+  background-color: #f7fcfa;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* Contact map */
+.map-frame {
+  width: 100%;
+  min-height: 380px;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* Sitemap */
+.sitemap-box {
+  border: 1px solid #d9e8e3;
+  border-radius: 14px;
+  padding: 20px;
+  background-color: white;
+}
+
+.sitemap-box a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sitemap-box a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--teal);
+  color: white;
+  padding: 35px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive helper */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 70px 0;
+  }
+
+  .event-banner {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silent Library | Book Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="SilentLibraryLogo.png"
+            alt="Silent Library logo"
+            height="40"
+          />
+          <span class="visually-hidden">Silent Library</span>
+        </a>
+        <div class="navbar-nav ms-auto flex-row flex-wrap gap-2">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="books.html">Books</a>
+          <a class="nav-link" href="events.html">Events</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="sitemap.html">Sitemap</a>
+          <a class="nav-link" href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="section-padding">
+      <div class="container">
+        <p>
+          <a href="books.html" class="text-decoration-none">Books</a> / The
+          Little Reading Tree
+        </p>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="book-cover-box" style="min-height: 420px">
+              The Little Reading Tree<br />Book Cover
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="custom-card p-4 bg-white">
+              <h1>The Little Reading Tree</h1>
+              <p class="text-muted mb-1">Author: Jane Lim</p>
+              <p>
+                <span class="badge badge-category p-2">Children</span>
+                <span class="badge badge-category p-2">Family</span>
+              </p>
+              <p><strong>Age suitability:</strong> 5 to 9 years old</p>
+              <p>
+                This is a mock-up book details page. It shows how users can read
+                a summary, check book information, view reviews, and understand
+                the borrowing process before making a choice.
+              </p>
+              <p>
+                The layout is designed with clear labels, large readable text,
+                and simple actions for both busy parents and older users.
+              </p>
+              <div class="mt-4">
+                <a href="#borrow" class="btn btn-main me-2 mb-2">Borrow Book</a>
+                <a href="#reviews" class="btn btn-outline-main me-2 mb-2"
+                  >Read Reviews</a
+                >
+                <a href="books.html" class="btn btn-outline-secondary mb-2"
+                  >Back to Books</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mock Borrow Panel -->
+        <section id="borrow" class="section-padding pb-0">
+          <div class="mock-box">
+            <h2>Borrow Book Mock-up</h2>
+            <p class="text-muted">
+              This is a front-end demonstration only. It does not connect to a
+              real borrowing system.
+            </p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="custom-card p-3 bg-white">
+                  <h5>Selected Book</h5>
+                  <p>The Little Reading Tree</p>
+                  <p>Category: Children / Family</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="custom-card p-3 bg-white">
+                  <h5>Borrow Steps</h5>
+                  <ol>
+                    <li>Check book details.</li>
+                    <li>Confirm the selected book.</li>
+                    <li>Visit the library counter to complete borrowing.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-main">Confirm</button>
+              <button class="btn btn-outline-secondary">Cancel</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Reviews and Related Books -->
+        <section id="reviews" class="section-padding">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2>Sample Reviews</h2>
+              <div class="review-box mb-3">
+                <p class="mb-1"><strong>Amanda Tan</strong></p>
+                <p class="mb-0">
+                  My children enjoyed this book. The story is simple and easy to
+                  follow.
+                </p>
+              </div>
+              <div class="review-box">
+                <p class="mb-1"><strong>Mr. Lim Wei Seng</strong></p>
+                <p class="mb-0">
+                  The page is clear and the information is easy to read.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h2>Related Books</h2>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="custom-card p-3 bg-white">
+                    <h5>Family Weekend Reads</h5>
+                    <p class="text-muted">Family reading suggestion.</p>
+                    <a
+                      href="book-details.html"
+                      class="btn btn-outline-main btn-sm"
+                      >View</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="custom-card p-3 bg-white">
+                    <h5>Simple Stories</h5>
+                    <p class="text-muted">Short stories for young readers.</p>
+                    <a
+                      href="book-details.html"
+                      class="btn btn-outline-main btn-sm"
+                      >View</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container text-center">
+        <p class="mb-2">Silent Library Prototype Website</p>
+        <a href="contact.html">Contact</a> |
+        <a href="sitemap.html">Sitemap</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>
